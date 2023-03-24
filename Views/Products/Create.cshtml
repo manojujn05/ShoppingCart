@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Create</h2>
+<form method="post" action="/products/create" >
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="ProductID">Product ID</label>
+            <input type="text" class="form-control" id="ProductID" placeholder="ProductID" name="ProductID">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="ProductName">Product Name</label>
+            <input type="text" class="form-control" id="ProductName" placeholder="Product Name" name="ProductName">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group  col-md-6">
+            <label for="Price">Price</label>
+            <input type="text" class="form-control" id="Price" placeholder="Price" name="Price">
+        </div>
+        <div class="form-group  col-md-6">
+            <label for="DateOfPurchase">Date Of Purchase</label>
+            <input type="date" class="form-control" id="DateOfPurchase" placeholder="DateOfPurchase" name="DateOfPurchase">
+        </div>
+    </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">AvailabilityStatus</label>
+                <select class="form-control" id="AvailabilityStatus" name="AvailabilityStatus">
+                    <option value="">Please Select</option>
+                    <option value="InStock">In Stock</option>
+                    <option value="OutOfStock">Out Of Stock</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="CategoryID">Category ID</label>
+                <input type="text" class="form-control" id="CategoryID" name="CategoryID">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="BrandID">Brand ID</label>
+                <input type="text" class="form-control" id="BrandID" name="BrandID">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="Active">Active</label>
+                <input type="text" class="form-control" id="Active" name="Active">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button class="btn btn-danger" type="button">Cancel</button>
+</form>
+
+
